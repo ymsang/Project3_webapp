@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block title %}List{% endblock %} {% block content
+    %} 
+    <h4 align= "center">Book List</h4>
+    <br />
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Price</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>title1</td>
+            <td>name</td>
+            <td>$10.00</td>
+            <td>link</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>title2</td>
+            <td>name</td>
+            <td>$5.00</td>
+            <td>link</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>title3</td>
+            <td>name</td>
+            <td>$11.00</td>
+            <td>link</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    {% endblock %}

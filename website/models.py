@@ -7,6 +7,7 @@ class Note (db.Model):
     data = db.Column(db.String(1000))
     date = db.Column(db.DateTime(timezone=True), default = func.now())
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    # title= db.relationship('List')
 
 class User (db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
@@ -15,5 +16,11 @@ class User (db.Model, UserMixin):
     first_name = db.Column(db.String(150))
     notes= db.relationship('Note')
 
+# class List (db.Model):
+#     id = db.Column(db.Integer, primary_key=True)
+#     Title= db.Column(db.String(150))
+#     Author= db.Column(db.String(150))
+#     Price= db.Column(db.Integer(150))
+#     Link= db.Column(db.String(150))
 
-    
+
